@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <title>Alta de Productos</title>
+    <style>
+        #logo { width: 150px; height: auto; display: block; margin: 20px auto; }
+        #desarrollador { text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header><img src="../../assets/img/logo.png" alt="Logo de VPM Computer" id="logo"></header>
+    <h1>Alta de Productos</h1>
+    <form action="../productos.php" method="post" id="productos">
+        <label for="id_producto">ID de Producto:</label>
+        <input type="number" id="id_producto" name="id_producto" required>
+        <label for="nombre_producto">Nombre de Producto:</label>
+        <input type="text" id="nombre_producto" name="nombre_producto" required>
+        <label for="imagen_producto">Imagen de Producto:</label>
+        <input type="file" id="imagen_producto" name="imagen_producto" required>
+        <label for="descripcion_producto">Descripción:</label>
+        <textarea id="descripcion_producto" name="descripcion_producto" required></textarea>
+        <label for="precio_producto">Precio:</label>
+        <input type="number" id="precio_producto" name="precio_producto" required>
+        <label for="categoria_producto">Categoría:</label>
+        <select id="categoria_producto" name="categoria_producto" required></select>
+        <button type="submit">Guardar</button>
+        <button type="button">Cancelar</button>
+    </form>
+    <div id="desarrollador"><p>Sergio San Martín</p></div>
+    <div id="bg-disable" class="inactive"><div id="alert-msg"><ul></ul></div></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="Anonymous"></script>
+    <script src="../../assets/js/validaciones.js"></script>
+</body>
+</html>
